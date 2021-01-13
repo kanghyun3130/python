@@ -1,0 +1,20 @@
+from random import randint
+
+print('input 1 to 1000000')
+i=int(input('player1:'))
+j=int(input('player2:'))
+while i!=0:
+    b=0
+    cnt=0
+    while b==0:
+        a= randint(1,1000000)
+        cnt+=1
+        if a==i:
+            print(f'-------------------------------player1 win!----------------- with number: {i}    attemps:{cnt}')
+            b=1
+        if a==j:
+            print(f'-------------------------------player2 win!----------------- with number: {j}    attemps:{cnt}')
+            b=1
+    print('input 1 to 1000000')
+    i=int(input('player1:'))
+    j=int(input('player2:'))
